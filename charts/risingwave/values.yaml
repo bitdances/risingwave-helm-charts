@@ -498,6 +498,7 @@ stateStore:
     ## @param stateStore.s3.forcePathStyle Enforce path style requests. If the value is false, the path could be one
     ## of path style and virtual hosted style, depending on the endpoint format. For more details of the two styles, 
     ## please refer to the documentation: https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html
+    ##
     forcePathStyle: false
     
     authentication:

@@ -117,11 +117,11 @@ tests:
         enabled: true
         forcePathStyle: true
   asserts:
-  - notContains:
+  - contains:
       path: spec.template.spec.containers[0].env
       content:
         name: RW_IS_FORCE_PATH_STYLE
-        value: true          
+        value: "true"
 - it: envs must not contain force path style (s3)
   set:
     stateStore:
