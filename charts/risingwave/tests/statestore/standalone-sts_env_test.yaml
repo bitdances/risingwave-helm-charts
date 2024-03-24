@@ -42,7 +42,7 @@ tests:
       path: spec.template.spec.containers[0].env
       content:
         name: RW_IS_FORCE_PATH_STYLE
-      any: "true"
+      any: true
   - notContains:
       path: spec.template.spec.containers[0].envFrom
       content:
@@ -116,7 +116,7 @@ tests:
       path: spec.template.spec.containers[0].env
       content:
         name: RW_IS_FORCE_PATH_STYLE
-        value: true
+        value: "true"
 - it: envs must not contain force path style (s3)
   set:
     stateStore:
